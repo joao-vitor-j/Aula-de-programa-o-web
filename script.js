@@ -12,6 +12,8 @@ function calcularMedia() {
 
   if (nome === "" || nota1 === "" || nota2 === "" || nota3 === "") {
   document.getElementById("resultado").innerText = "Preencha o nome e as três notas!";
+  document.getElementById("resultado").className="error";
+
   return;
   }
 
@@ -48,13 +50,18 @@ if (nota1 < 0 || nota1 > 10 ||
   let situacao;
 
   if (media >= 7) {
-    situacao = "Aprovado";
+    situacao = "Aprovado"; 
+    document.getElementById("resultado").className="aprovado";
+   
   }
   else if (media >= 5 && media <= 6.9) {
     situacao = "Recupeção";
+    document.getElementById("resultado").className="recuperacao";
+
   }
   else { 
     situacao = "Reprovado";
+    document.getElementById("resultado").className="reprovado";
   }
   console.log("Situação:", situacao);
 
@@ -67,6 +74,8 @@ if (nota1 < 0 || nota1 > 10 ||
 
   // Passo 3: mostra o texto na tela
   document.getElementById("resultado").innerText = texto;
+
+
 }
 // Quando o botão for clicado, chama a função acima
 document.getElementById("btn-calcular").addEventListener("click", calcularMedia);

@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #045b75;
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
 .container {
-  background: white;
+  background: gray;
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -43,4 +43,16 @@ button {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+}
+.aprovado{
+  color: rgb(0, 255, 0);
+}
+.recuperacao{
+  color: yellow;
+}
+.reprovado{
+  color: red;
+}
+.error{
+  color: rgb(185, 0, 0);
 }
