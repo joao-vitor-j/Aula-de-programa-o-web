@@ -1,16 +1,16 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #045b75;
+  background-color: rgb(135, 114, 209);
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
 .container {
-  background: gray;
+  background: #d5b4ff;
   padding: 24px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 320px;
 }
 
@@ -31,11 +31,18 @@ button {
   margin-top: 16px;
   padding: 10px;
   width: 100%;
-  background-color: #2b6cb0;
-  color: white;
+  background-color: #702bb0;
+  color: rgb(240, 194, 247);
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  
+}
+
+button:hover {
+    background-color: #fd99ec;
+    color:rgb(240, 194, 247);
+    transition: 0.3s;
 }
 
 #resultado {
@@ -44,15 +51,19 @@ button {
   font-weight: bold;
   text-align: center;
 }
-.aprovado{
-  color: rgb(0, 255, 0);
+
+.aprovado {
+  color:rgb(5, 138, 25)
 }
-.recuperacao{
-  color: yellow;
+
+.recuperacao {
+  color:rgb(250, 244, 160)
 }
-.reprovado{
-  color: red;
+
+.reprovado {
+  color:rgb(124, 12, 12)
 }
-.error{
-  color: rgb(185, 0, 0);
+
+.erro {
+  color:rgb(49, 1, 77)
 }
